@@ -37,7 +37,7 @@ from render import texture
 from render import mlptexture
 from render import light
 from render import render
-from sd import StableDiffusion
+from utils.sd import StableDiffusion
 from tqdm import tqdm
 import open3d as o3d
 import torchvision.transforms as transforms
