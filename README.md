@@ -1,6 +1,6 @@
 # <p align="center"> <font color=#008000>GALA</font>: Generating Animatable Layered Assets <br> from a Single Scan </p>
 
-## [Project Page](https://snuvclab.github.io/gala/) &nbsp;|&nbsp; [Paper](https://arxiv.org/) 
+## [Project Page](https://snuvclab.github.io/gala/) &nbsp;|&nbsp; [Paper](https://arxiv.org/abs/2401.12979) 
 
 ![teaser.png](./assets/teaser.png)
 
