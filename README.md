@@ -7,7 +7,7 @@
 This is the official code for the paper "GALA: Generating Animatable Layered Assets from a Single Scan".
 
 ## News
-- [2024/01/10] Initial release.
+- [2024/01/24] Initial release.
 
 ## Installation
 Setup the environment using conda.
@@ -62,8 +62,13 @@ You can check the outputs in ``./results``. You can modify input text conditions
 If you find this work useful, please cite our paper:
 
 ```
-@InProceedings{
-  Coming soon!
+@misc{kim2024gala,
+  title={GALA: Generating Animatable Layered Assets from a Single Scan}, 
+  author={Taeksoo Kim and Byungjun Kim and Shunsuke Saito and Hanbyul Joo},
+  year={2024},
+  eprint={2401.12979},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
 }
 ```
 
