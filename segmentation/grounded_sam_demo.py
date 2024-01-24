@@ -15,7 +15,7 @@ from GroundingDINO.groundingdino.util.slconfig import SLConfig
 from GroundingDINO.groundingdino.util.utils import clean_state_dict, get_phrases_from_posmap
 
 # segment anything
-from segment_anything import (
+from segment_anything.segment_anything import (
     build_sam,
     build_sam_hq,
     SamPredictor
