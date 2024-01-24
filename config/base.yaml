@@ -1,0 +1,63 @@
+# default.yaml
+
+mode: "geometry_modeling"
+use_legacy: false
+dataset_type: "renderpeople"
+
+subject: null
+data_dir: null
+out_dir: null                                           # Output directory (null for default)
+layer: false
+
+## train
+# iter: 3000                                         # Number of iterations for the algorithm
+# init_iter: 1000
+# coarse_iter: 3000                                  # Coarse stage iteration number
+save_interval: 100
+batch: 1                                           # Batch size for training
+local_rank: 0                                      # For distributed training: local_rank
+seed: 42                                           # A seed for reproducible training
+validate: true                                    # Validation flag (true or false)
+video_interval: 10                                 # The interval of saving a frame of the video
+ckpt3d_interval: 100
+train_res:  [512, 512]                    # Training resolution [width, height]
+display_res: null                                       # Display resolution (null for default)
+save_ckpt3d: false
+
+## render
+spp: 1                                             # Samples per pixel
+layers: 1                                          # Number of layers
+texture_res:  [1024, 1024]                # Texture resolution [width, height]
+min_roughness: 0.08                              # Minimum roughness
+custom_mip: false                                 # Use custom MIP
+random_textures: true                            # Use random textures
+train_background: "black"                               # Training background color
+if_flip_the_normal: false
+if_use_bump: true
+uv_padding_block: 4
+
+## dmtet
+high_res_tets: true
+dmtet_grid: 256                           # Resolution of initial tet grid. We provide 64, 128 and 256 resolution grids. Other resolutions can be generated with https://github.com/crawforddoran/quartet
+sdf_init_shape: "custom_mesh"
+sdf_init_shape_rotate_x: 0
+sdf_init_shape_scale: [1, 1, 1]
+ref_mesh: null                                          # Reference mesh file (null for none)
+base_mesh: null                                         # Base mesh file (null for none)
+segm_mesh: null                                         # Segmentation mesh file (null for none)
+mesh_scale: 2.0
+translation_y: 0
+translation_z: 0
+rig: false
+
+## sds
+camera_random_jitter: null
+fovy_range: [25.71, 45]
+init_elevation_range: [-90, 90]
+elevation_range: [-30, 30]
+guidance_weight: 7.5
+early_time_step_range: [0.02, 0.5]
+late_time_step_range: [0.02, 0.5]
+sds_weight_strategy: 0
+front_threshold: 45
+use_taesd: false

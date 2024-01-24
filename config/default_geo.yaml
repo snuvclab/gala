@@ -1,0 +1,86 @@
+mode: "geometry_modeling"
+exp_name: geometry  # save_dir: {time}_{exp_name}
+
+subject: null
+data_dir: "data/rp"
+out_dir: "results/rp"
+
+## training options
+iter: 2000
+init_iter: 400
+init_refine_iter: 800
+subdiv_iter: 1200
+coarse_iter: 2000
+save_interval: 100
+train_res: [512, 512]
+spp: 1
+batch: 4
+
+## dmtet
+dilate_seg_mask: true
+init_sdf: true
+init_obj_smplx: true
+take_turns: true
+detach_hum: false
+detach_obj: false
+is_obj_most_outer: true
+subdivision: false
+num_subdivision: 1
+vis_subdiv: false
+
+## zoom in
+enable_zoom_in: true
+zoom_in_body: true
+zoom_in_head_hands: true
+
+## pose
+enable_canonical: true
+use_canonical_sds: true
+multi_pose: true
+pose_dependent_shape: false # needs multi_pose=true
+pose_dependent_transl: false # needs multi_pose=true
+
+
+## sds
+use_legacy: true
+sd_model: null
+sd_model_db: null
+guidance_weight: 7.5
+guidance_weight_obj: 7.5
+camera_random_jitter: 0.0
+elevation_range: [-10, 20]
+early_time_step_range: [0.02, 0.98]
+early_time_step_range_obj: [0.02, 0.98]
+late_time_step_range: [0.02, 0.20]
+late_time_step_range_obj: [0.02, 0.20]
+display:
+  - bsdf: "normal"
+use_cam_normal: false
+add_directional_text: true
+use_inpaint: false
+repaint: false
+enable_controlnet: true
+controlnet_type: "op"
+sds_in_obj_space: false
+sds_for_hands: false
+use_smplx_hands: false
+
+## loss weights
+enable_lap: false
+enable_norm_smooth: false
+enable_min_surface: false
+enable_3d_segm: false
+w_recon_segm: 200000.0 
+w_recon_full: 5000.0
+w_reg_lap: 10000.0
+w_reg_norm_smooth: 500.0
+w_reg_min_surface: 10000.0
+w_reg_min_surface_init: 0.0
+w_reg_3d: 1000.0
+w_sds_reg: 1000.0
+w_sds: 1.0
+
+# resume
+resume: false
+save_ckpt: false
+resume_ckpt: null

@@ -1,0 +1,70 @@
+mode: "appearance_modeling"
+exp_name: appearance  # save_dir: {time}_{exp_name}
+
+subject: null
+data_dir: "data/rp"
+out_dir: "results/rp"
+
+## training options
+iter: 2000
+init_iter: 300
+init_refine_iter: 1200
+coarse_iter: 2000
+save_interval: 100
+# train_res: [512, 512]
+batch: 5
+
+## dmtet
+enable_canonical: true
+use_canonical_sds: true
+multi_pose: true
+dilate_seg_mask: true
+take_turns: true
+detach_hum: false
+detach_obj: false
+
+## zoom in
+enable_zoom_in: false
+zoom_in_body: false
+zoom_in_head_hands: true
+
+## sds
+use_legacy: true
+sd_model: null
+sd_model_db: null
+# sd_model_db: "textual_inversion/models"
+guidance_weight: 12
+guidance_weight_obj: 12
+camera_random_jitter: 0.0
+# fovy_range: [25.71, 45]
+init_elevation_range: [-0, 0]
+elevation_range: [-10, 45]
+early_time_step_range: [0.02, 0.98]
+early_time_step_range_obj: [0.02, 0.98]
+late_time_step_range: [0.02, 0.1]
+late_time_step_range_obj: [0.02, 0.1]
+display:
+  - bsdf: "normal"
+  - bsdf: "kd"
+use_cam_normal: false
+add_directional_text: true
+use_inpaint: false
+repaint: false
+enable_controlnet: true
+controlnet_type: "op"
+use_taesd: true
+sds_weight_strategy: 2
+
+## loss weights
+w_recon_rgb: 100000000.0
+w_sds_reg: 100000000.0
+w_sds: 1.0
+
+envmap: "data/irrmaps/mud_road_puresky_4k.hdr"
+env_scale: 2.0
+
+# resume
+resume: false
+save_ckpt: false
+resume_ckpt: null
+

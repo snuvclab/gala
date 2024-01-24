@@ -1,0 +1,15 @@
+parent: default_tex
+subject: "0001"
+data_dir: data/thuman
+out_dir: results/thuman
+geometry_dir: geometry
+
+text: "a photo of a man wearing a white t-shirt"
+negative_text: "a jacket"
+text_obj: "a photo of a man wearing a jacket"
+negative_text_obj: ""
+
+# resume
+resume: false
+save_ckpt: false
+resume_ckpt: ""
