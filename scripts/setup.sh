@@ -1,7 +1,7 @@
 # xFormers
 git clone https://github.com/facebookresearch/xformers.git
 cd xformers
-"numpy" > requirements.txt
+echo "numpy" > requirements.txt
 git submodule update --init --recursive
 python setup.py install
 cd ..
