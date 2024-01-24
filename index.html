@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Project page of the paper <GALA: Generating Animatable Layered Assets from a Single Scan">
+  <meta property="og:title" content="GALA: Generating Animatable Layered Assets from a Single Scan"/>
+  <meta property="og:description" content="We present GALA, a framework that takes as input a single-layer clothed 3D human mesh and decomposes it into complete multi-layered 3D assets."/>
+  <meta property="og:url" content="https://snuvclab.github.io/gala/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/teaser.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="600"/>
+
+
+  <meta name="twitter:title" content="GALA: Generating Animatable Layered Assets from a Single Scan">
+  <meta name="twitter:description" content="We present GALA, a framework that takes as input a single-layer clothed 3D human mesh and decomposes it into complete multi-layered 3D assets.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/teaser.png">
+  <meta name="twitter:card" content="static/images/teaser.png">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="GALA, Avatar, Human, Decomposition, 3D, Diffusion, SDS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GALA</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">GALA: Generating Animatable Layered Assets<br>from a Single Scan</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://taeksuu.github.io/" target="_blank">Taeksoo Kim</a><sup>1*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://bjkim95.github.io/" target="_blank">Byungjun Kim</a><sup>1*</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://shunsukesaito.github.io/" target="_blank">Shunsuke Saito</a><sup>2</sup>,</span>
+                  </span>
+                  <span class="author-block">
+                    <a href="https://jhugestar.github.io/" target="_blank">Hanbyul Joo</a><sup>1</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Seoul National University,</span>
+                    <span class="author-block"><sup>2</sup>Codec Avatars Lab, Meta</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+                  <br>
+                  <div class="columns is-centered">
+                    <div class="is-size-4 publication-venue">arXiv</div>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/snuvclab/GALA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <!--
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/random.mp4"
+        type="video/mp4">
+      </video>
+    -->
+    <img src="static/images/teaser_arxiv.png" alt="Random Image" id="tree" height="100%">
+      <h2 class="subtitle has-text-centered">
+        Given a single-layer 3D mesh of a clothed human (left), our approach enables Generation of Animatable Layered Assets
+for 3D garment transfer and avatar customization in any poses by decomposing and inpainting the geometry and texture of each layer with a
+pretrained 2D diffusion model in a canonical space.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            <p>We present GALA, a framework that takes as input a single-layer clothed 3D human mesh and decomposes it into complete multi-layered 3D assets. The outputs can then be combined with other assets to create novel clothed human avatars with any pose. Existing reconstruction approaches often treat clothed humans as a single-layer of geometry and overlook the inherent compositionality of humans with hairstyles, clothing, and accessories, thereby limiting the utility of the meshes for downstream applications. Decomposing a single-layer mesh into separate layers is a challenging task because it requires the synthesis of plausible geometry and texture for the severely occluded regions. Moreover, even with successful decomposition, meshes are not normalized in terms of poses and body shapes, failing coherent composition with novel identities and poses. To address these challenges, we propose to leverage the general knowledge of a pretrained 2D diffusion model as geometry and appearance prior for humans and other assets. We first separate the input mesh using the 3D surface segmentation extracted from multi-view 2D segmentations. Then we synthesize the missing geometry of different layers in both posed and canonical spaces using a novel pose-guided Score Distillation Sampling (SDS) loss. Once we complete inpainting high-fidelity 3D geometry, we also apply the same SDS loss to its texture to obtain the complete appearance including the initially occluded regions. Through a series of decomposition steps, we obtain multiple layers of 3D assets in a shared canonical space normalized in terms of poses and human shapes, hence supporting effortless composition to novel identities and reanimation with novel poses. Our experiments demonstrate the effectiveness of our approach for decomposition, canonicalization, and composition tasks compared to existing solutions.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<br>
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Example Outputs</h2>
+
+    <h2 class="title is-5">Decomposition and Canonicalization</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/decompose_0_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/decompose_1_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/decompose_2_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/decompose_3_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title is-5">Layered Decomposition and Composition</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/layered_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title is-5">Decomposition of User Generated Assets</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/app_0_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" height="100%">
+            <source src="./static/videos/app_1_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <h2 class="title is-5">Generated Assets</h2>
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <video id="dollyzoom" autoplay="" controls="" muted="" loop="" playsinline="" width="100%">
+            <source src="./static/videos/assets_crop.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Method -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <img src="static/images/overview_arxiv.png" alt="Random Image" id="tree" height="100%">
+      <h2 class="subtitle has-text-centered">
+        GALA learns an object and the remaining human layers in separate canonical spaces. 
+        The canonical space, represented in <span style="color:orange">orange</span>, and the original posed space, represented in <span style="color:purple">purple</span>, are differentiably associated using linear blend skinning (LBS).
+        Our innovative pose-guided SDS loss (on the right) facilitates the decomposition and inpainting in both the canonical and posed spaces. 
+        Additionally, we preserve the accuracy of visible regions through a reconstruction and segmentation loss (bottom-left).
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      
+      <div class="columns is-centered has-text-centered">
+        
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Video</h2>
+          <div class="publication-video">
+            <!-- Youtube embed code here -->
+            <video poster="" id="tree" controls loop height="100%">
+              <source src="static/videos/project_page_video.mp4" type="video/mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+<!-- Paper poster -->
+<!--
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section>
+  -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>Coming soon!</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            <a href="https://www.flaticon.com/free-icons/tuxedo" title="tuxedo icons">Tuxedo icons created by Freepik - Flaticon</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
