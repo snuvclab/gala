@@ -17,8 +17,9 @@ cd GroundingDINO
 python setup.py build
 python setup.py install
 cd ..
+cd ..
 mkdir segmentation/segment_anything
-mkdir segmentation/GroundingDINOpythpyth
+mkdir segmentation/GroundingDINO
 mv Grounded-Segment-Anything/segment_anything/* segmentation/segment_anything
 mv Grounded-Segment-Anything/GroundingDINO/* segmentation/GroundingDINO
 cd segmentation
