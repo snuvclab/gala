@@ -9,7 +9,7 @@ export OUTPUT_DIR="textual_inversion/models/$MESH_NAME"
 python utils/normalize_mesh.py -f "$MESH_NAME" --dataset_type "$DATASET" --norm_with_smplx
 
 # render rgb for segmentation
-python segmentation/render.py -f "$MESH_NAME" --dataset_type "$DATASET"
+python segmentation/render.py -f "$MESH_NAME"
 
 # segmentation
 python segmentation/grounded_sam_demo.py \

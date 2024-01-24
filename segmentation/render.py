@@ -8,7 +8,6 @@ import torch
 import pickle
 import nvdiffrast.torch as dr
 import numpy as np
-import ipdb
 
 from pytorch3d.io import load_obj
 from scipy.spatial.transform import Rotation as R
