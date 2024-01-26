@@ -242,7 +242,7 @@ class DLMesh(torch.nn.Module):
 
         # posed smplx
         beta = smplx_params['betas'].squeeze()[:10]
-        body_pose = smplx_params['body_pose'] if smplx_params['body_pose'].shape[1] == 63 else smplx_params['body_pose'][3:]
+        body_pose = smplx_params['body_pose'] if smplx_params['body_pose'].shape[1] == 63 else smplx_params['body_pose'][:, 3:]
         full_pose = torch.cat([smplx_params['global_orient'], body_pose,
                             smplx_params['jaw_pose'], smplx_params['leye_pose'], smplx_params['reye_pose'],  
                             smplx_params['left_hand_pose'][:, :6], smplx_params['right_hand_pose'][:, :6]], dim=1)
