@@ -1,12 +1,3 @@
-# xFormers
-git clone https://github.com/facebookresearch/xformers.git
-cd xformers
-echo "numpy" > requirements.txt
-git submodule update --init --recursive
-python setup.py install
-cd ..
-rm -rf xformers
-
 # Grounded SAM
 git clone https://github.com/IDEA-Research/Grounded-Segment-Anything.git
 cd Grounded-Segment-Anything
@@ -50,3 +41,12 @@ rm ./deformer/data/scarf_utilities.zip
 # Generate tetrahedral grid
 python utils/generate_tets.py
 rm cube.obj
+
+# xFormers
+git clone https://github.com/facebookresearch/xformers.git
+cd xformers
+echo "numpy" > requirements.txt
+git submodule update --init --recursive
+python setup.py install
+cd ..
+rm -rf xformers

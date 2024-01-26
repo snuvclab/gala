@@ -331,7 +331,7 @@ def render_mesh(
     # Composite layers front-to-back
     out_buffers = {}
     for key in layers[0][0].keys():
-        if key == 'shaded':
+        if key == 'shaded' or key == 'v_color':
             accum = composite_buffer(key, layers, background, True)
         else:
             accum = composite_buffer(key, layers, torch.zeros_like(layers[0][0][key]), False)

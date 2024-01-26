@@ -31,7 +31,7 @@ texture_res:  [1024, 1024]                # Texture resolution [width, height]
 min_roughness: 0.08                              # Minimum roughness
 custom_mip: false                                 # Use custom MIP
 random_textures: true                            # Use random textures
-train_background: "black"                               # Training background color
+train_background: "random"                               # Training background color
 if_flip_the_normal: false
 if_use_bump: true
 uv_padding_block: 4

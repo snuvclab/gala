@@ -64,7 +64,11 @@ def prepare_batch(target, background= 'black',it = 0,coarse_iter=0):
     if background == 'white':
         target['background']= torch.ones(batch_size, resolution[0], resolution[1], 3, dtype=torch.float32, device='cuda') 
     if background == 'black':
-        target['background'] = torch.zeros(batch_size, resolution[0], resolution[1], 3, dtype=torch.float32, device='cuda') 
+        target['background'] = torch.zeros(batch_size, resolution[0], resolution[1], 3, dtype=torch.float32, device='cuda')
+    if background == 'random':
+        target['background'] = torch.ones(batch_size, resolution[0], resolution[1], 3, dtype=torch.float32, device='cuda')
+        if random.random() < 0.5:
+            target['background'] = target['background'] * torch.rand(1).cuda()
         # if it<=coarse_iter:
         #     target['background'][:,:,:,0:2] -=1
         #     target['background'][:,:,:,2:3] +=1
