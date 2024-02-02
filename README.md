@@ -10,7 +10,7 @@ This is the official code for the paper "GALA: Generating Animatable Layered Ass
 - [2024/01/24] Initial release.
 
 ## Installation
-Setup the environment using conda.
+Setup the environment using conda. We used a single 24GB gpu in our work, but you may adjust the batch size to fit your gpus.
 ``` 
 conda env create -f env.yaml
 conda activate gala
@@ -81,3 +81,6 @@ We sincerely thank the authors of
 - [TeCH](https://github.com/huangyangyi/TeCH)
 
 for their amazing work and codes!
+
+## License
+Codes are available only for non-commercial research purposes.
