@@ -2,7 +2,7 @@
 
 ## [Project Page](https://snuvclab.github.io/gala/) &nbsp;|&nbsp; [Paper](https://arxiv.org/abs/2401.12979) 
 
-![teaser.png](./assets/teaser.png)
+![demo.gif](./assets/demo.gif)
 
 This is the official code for the paper "GALA: Generating Animatable Layered Assets from a Single Scan".
 
