@@ -1,10 +1,10 @@
-# <p align="center"> <font color=#008000>GALA</font>: Generating Animatable Layered Assets <br> from a Single Scan </p>
+# <p align="center"> <font color=#008000>GALA</font>: Generating Animatable Layered Assets <br> from a Single Scan (CVPR 2024)</p>
 
 ## [Project Page](https://snuvclab.github.io/gala/) &nbsp;|&nbsp; [Paper](https://arxiv.org/abs/2401.12979) 
 
 ![demo.gif](./assets/demo.gif)
 
-This is the official code for the paper "GALA: Generating Animatable Layered Assets from a Single Scan".
+This is the official code for the CVPR 2024 paper "GALA: Generating Animatable Layered Assets from a Single Scan".
 
 ## News
 - [2024/01/24] Initial release.
