@@ -62,13 +62,11 @@ You can check the outputs in ``./results``. You can modify input text conditions
 If you find this work useful, please cite our paper:
 
 ```
-@misc{kim2024gala,
-  title={GALA: Generating Animatable Layered Assets from a Single Scan}, 
-  author={Taeksoo Kim and Byungjun Kim and Shunsuke Saito and Hanbyul Joo},
-  year={2024},
-  eprint={2401.12979},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+@inproceedings{kim2024gala,
+  title={Gala: Generating animatable layered assets from a single scan},
+  author={Kim, Taeksoo and Kim, Byungjun and Saito, Shunsuke and Joo, Hanbyul},
+  booktitle={CVPR},
+  year={2024}
 }
 ```
 
